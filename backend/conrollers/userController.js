@@ -1,4 +1,4 @@
-import {UserModel} from "../models/usermodel.js" 
+import UserModel from "../models/usermodel.js" 
 import dotenv from 'dotenv'
 dotenv.config()
 
