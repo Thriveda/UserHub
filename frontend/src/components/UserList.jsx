@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom"
 
 function UserList() {
 
-  const url = "http://localhost:5000"
+  const url = import.meta.env.VITE_API_URL
 
   const [users, setusers] = useState([])
   const navigate = useNavigate()

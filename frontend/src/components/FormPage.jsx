@@ -4,7 +4,7 @@ import { useNavigate, useLocation } from 'react-router-dom';
 
 function FormPage() {
 
-  const url = "http://localhost:5000"
+  const url = import.meta.env.VITE_API_URL
 
   const navigate = useNavigate()
   const location = useLocation()
