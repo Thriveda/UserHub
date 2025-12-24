@@ -143,7 +143,7 @@ function FormPage() {
             <input
               className="w-full py-2.5 px-4 border-2 border-gray-100 rounded-lg focus:outline-none focus:border-gray-300 text-gray-700"
               id="phoneNo"
-              type="tel "
+              type="text"
               placeholder="Enter phone number"
               onChange={handleChange}
               value={formData.phoneNo}
