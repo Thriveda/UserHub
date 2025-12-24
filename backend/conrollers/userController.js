@@ -1,10 +1,10 @@
-import UserModel from "../models/usermodel.js" 
+import UserModel from "../models/userModel.js" 
 import dotenv from 'dotenv'
 dotenv.config()
 
 export async function getAllUsers(req, res){
     try{
-        const users = await UserModel.find();
+        const users = await UserModel.find({});
         if (users){
             return res.status(200).json({ message: "fetched the data of all users", users:users});
         }
